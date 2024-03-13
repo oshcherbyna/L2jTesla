@@ -50,7 +50,9 @@ class AdminAutobots : IAdminCommandHandler {
     private val ADMIN_COMMANDS = arrayOf("admin_a")
 
     override fun useAdminCommand(command: String?, activeChar: Player): Boolean {
-        val splitCommand = command!!.split(" ")
+        // FIX empty command argument => redirect to bot menu ===========
+        val splitCommand = command!!.split(" ").takeIf { it.size > 1 } ?: listOf(command, "b") //val splitCommand = command!!.split(" ") 
+        // END FIX ===================================
         when (splitCommand[1]){
             "random" -> {
                 AdminActions.createAndSpawnRandomBots(splitCommand, activeChar)
