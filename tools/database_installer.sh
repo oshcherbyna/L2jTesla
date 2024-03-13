@@ -74,9 +74,9 @@ fi
 
 $MYL < ../sql/accounts.sql &> /dev/null
 $MYL < ../sql/gameservers.sql &> /dev/null
-
 $MYG < ../sql/auction_bid.sql &> /dev/null
 $MYG < ../sql/augmentations.sql &> /dev/null
+$MYG < ../sql/autobots.sql &> /dev/null
 $MYG < ../sql/bookmarks.sql &> /dev/null
 $MYG < ../sql/buffer_schemes.sql &> /dev/null
 $MYG < ../sql/buylists.sql &> /dev/null
@@ -99,6 +99,7 @@ $MYG < ../sql/character_skills.sql &> /dev/null
 $MYG < ../sql/character_skills_save.sql &> /dev/null
 $MYG < ../sql/character_subclasses.sql &> /dev/null
 $MYG < ../sql/characters.sql &> /dev/null
+$MYG < ../sql/characters_autofarm.sql &> /dev/null
 $MYG < ../sql/clan_data.sql &> /dev/null
 $MYG < ../sql/clan_privs.sql &> /dev/null
 $MYG < ../sql/clan_skills.sql &> /dev/null
